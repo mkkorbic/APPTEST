@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AppFlow — Option 7: Brutalist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { mono: ['JetBrains Mono', 'Courier New', 'monospace'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+  </style>
+</head>
+<body class="bg-black text-white font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="border-b-4 border-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <span class="text-2xl font-black uppercase tracking-tighter">AppFlow*</span>
+      <div class="hidden md:flex gap-0">
+        <a href="#features" class="border-l-2 border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition-all">Features</a>
+        <a href="#testimonials" class="border-l-2 border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition-all">Proof</a>
+        <a href="#pricing" class="border-l-2 border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition-all">Pricing</a>
+        <a href="#cta" class="border-l-2 border-r-2 border-white bg-white text-black px-4 py-2 text-sm font-black uppercase hover:bg-yellow-300 transition-all">START</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="max-w-7xl mx-auto px-6 pt-20 pb-24 border-b-4 border-white">
+    <div class="grid md:grid-cols-12 gap-8">
+      <div class="md:col-span-8">
+        <h1 class="text-7xl md:text-[120px] font-black leading-[0.85] uppercase tracking-tighter mb-8">
+          STOP<br/>WASTING<br/>TIME.
+        </h1>
+        <p class="text-lg text-neutral-400 max-w-lg mb-8 font-mono">AppFlow is the fastest way to go from code to production. No BS. No complexity. Just ship.</p>
+        <a href="#" class="inline-block bg-white text-black font-black uppercase text-lg px-10 py-4 hover:bg-yellow-300 transition-all">START NOW &rarr;</a>
+      </div>
+      <div class="md:col-span-4 flex flex-col justify-end">
+        <div class="border-2 border-neutral-700 p-4 font-mono text-xs text-neutral-500">
+          <p>FOUNDED: 2024</p>
+          <p>USERS: 12,847</p>
+          <p>DEPLOYS/DAY: 94,231</p>
+          <p>UPTIME: 99.99%</p>
+          <p>STATUS: <span class="text-green-400">OPERATIONAL</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-7xl mx-auto px-6 py-20 border-b-4 border-white">
+    <div class="flex items-baseline justify-between mb-12">
+      <h2 class="text-4xl font-black uppercase tracking-tighter">What you get</h2>
+      <span class="text-sm font-mono text-neutral-500">03 CORE FEATURES</span>
+    </div>
+    <div class="grid md:grid-cols-3 gap-0">
+      <div class="border-2 border-white p-8 hover:bg-white hover:text-black transition-all group">
+        <span class="text-6xl font-black block mb-4">01</span>
+        <h3 class="text-xl font-black uppercase mb-3">DEPLOY</h3>
+        <p class="text-neutral-400 group-hover:text-neutral-600 font-mono text-sm">Git push. Done. Your code is live in under 3 seconds flat.</p>
+      </div>
+      <div class="border-2 border-white border-l-0 p-8 hover:bg-white hover:text-black transition-all group">
+        <span class="text-6xl font-black block mb-4">02</span>
+        <h3 class="text-xl font-black uppercase mb-3">MONITOR</h3>
+        <p class="text-neutral-400 group-hover:text-neutral-600 font-mono text-sm">Real-time logs, metrics, and alerts. Know everything. Miss nothing.</p>
+      </div>
+      <div class="border-2 border-white border-l-0 p-8 hover:bg-white hover:text-black transition-all group">
+        <span class="text-6xl font-black block mb-4">03</span>
+        <h3 class="text-xl font-black uppercase mb-3">SCALE</h3>
+        <p class="text-neutral-400 group-hover:text-neutral-600 font-mono text-sm">Auto-scaling that actually works. Handle traffic spikes without thinking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="max-w-7xl mx-auto px-6 py-20 border-b-4 border-white">
+    <h2 class="text-4xl font-black uppercase tracking-tighter mb-12">PROOF</h2>
+    <div class="space-y-0">
+      <div class="border-2 border-white p-8">
+        <p class="text-2xl font-black uppercase leading-tight mb-4">"APPFLOW IS RAW, FAST, AND UNCOMPROMISING. EXACTLY WHAT WE NEEDED."</p>
+        <p class="font-mono text-sm text-neutral-500">— ALEX M. / ENGINEERING LEAD / RAWSTACK</p>
+      </div>
+      <div class="border-2 border-white border-t-0 p-8">
+        <p class="text-2xl font-black uppercase leading-tight mb-4">"WE DELETED 4 TOOLS FROM OUR STACK. APPFLOW REPLACED THEM ALL."</p>
+        <p class="font-mono text-sm text-neutral-500">— NINA W. / FOUNDER / BASECAMP.DEV</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="max-w-7xl mx-auto px-6 py-20 border-b-4 border-white">
+    <h2 class="text-4xl font-black uppercase tracking-tighter mb-12">PRICING</h2>
+    <div class="grid md:grid-cols-3 gap-0">
+      <div class="border-2 border-white p-8">
+        <h3 class="font-black uppercase text-sm tracking-wider text-neutral-500 mb-4">FREE</h3>
+        <p class="text-5xl font-black mb-6">$0</p>
+        <ul class="font-mono text-sm text-neutral-400 space-y-2 mb-8">
+          <li>/ 2 projects</li>
+          <li>/ Community support</li>
+          <li>/ Basic monitoring</li>
+        </ul>
+        <a href="#" class="block text-center border-2 border-white py-3 font-black uppercase text-sm hover:bg-white hover:text-black transition-all">START</a>
+      </div>
+      <div class="border-2 border-white border-l-0 p-8 bg-white text-black">
+        <h3 class="font-black uppercase text-sm tracking-wider text-neutral-500 mb-4">PRO</h3>
+        <p class="text-5xl font-black mb-6">$35</p>
+        <ul class="font-mono text-sm text-neutral-600 space-y-2 mb-8">
+          <li>/ Unlimited projects</li>
+          <li>/ Priority support</li>
+          <li>/ Full analytics</li>
+          <li>/ Custom domains</li>
+        </ul>
+        <a href="#" class="block text-center bg-black text-white py-3 font-black uppercase text-sm hover:bg-yellow-300 hover:text-black transition-all">GO PRO</a>
+      </div>
+      <div class="border-2 border-white border-l-0 p-8">
+        <h3 class="font-black uppercase text-sm tracking-wider text-neutral-500 mb-4">ENTERPRISE</h3>
+        <p class="text-5xl font-black mb-6">???</p>
+        <ul class="font-mono text-sm text-neutral-400 space-y-2 mb-8">
+          <li>/ Dedicated infra</li>
+          <li>/ SLA guarantee</li>
+          <li>/ 24/7 direct line</li>
+          <li>/ Custom everything</li>
+        </ul>
+        <a href="#" class="block text-center border-2 border-white py-3 font-black uppercase text-sm hover:bg-white hover:text-black transition-all">TALK</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center">
+      <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8">SHIP IT<br/>OR<br/>QUIT.</h2>
+      <a href="#" class="inline-block bg-white text-black font-black uppercase text-xl px-16 py-5 hover:bg-yellow-300 transition-all">START FREE &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t-4 border-white">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between text-xs font-mono text-neutral-500">
+      <span>&copy; 2026 APPFLOW</span>
+      <div class="flex gap-4 uppercase">
+        <a href="#" class="hover:text-white transition">Privacy</a>
+        <a href="#" class="hover:text-white transition">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

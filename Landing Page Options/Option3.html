@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AppFlow — Option 3: Futuristic Neon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            neon: { cyan: '#00f5ff', pink: '#ff00e5', green: '#39ff14' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+    .glow-cyan { text-shadow: 0 0 20px #00f5ff, 0 0 40px #00f5ff44; }
+    .glow-pink { text-shadow: 0 0 20px #ff00e5, 0 0 40px #ff00e544; }
+    .border-glow-cyan { box-shadow: 0 0 15px #00f5ff33, inset 0 0 15px #00f5ff11; }
+    .border-glow-pink { box-shadow: 0 0 15px #ff00e533, inset 0 0 15px #ff00e511; }
+    .grid-bg { background-image: linear-gradient(rgba(0,245,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,245,255,0.05) 1px, transparent 1px); background-size: 60px 60px; }
+  </style>
+</head>
+<body class="bg-black text-white font-sans antialiased grid-bg">
+
+  <!-- Nav -->
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
+    <span class="text-xl font-bold text-[#00f5ff] glow-cyan tracking-wider">APPFLOW</span>
+    <div class="hidden md:flex gap-8 text-sm text-neutral-500 uppercase tracking-wider">
+      <a href="#features" class="hover:text-[#00f5ff] transition">Features</a>
+      <a href="#testimonials" class="hover:text-[#00f5ff] transition">Testimonials</a>
+      <a href="#pricing" class="hover:text-[#00f5ff] transition">Pricing</a>
+    </div>
+    <a href="#cta" class="text-sm font-bold border border-[#00f5ff] text-[#00f5ff] px-6 py-2 rounded hover:bg-[#00f5ff] hover:text-black transition border-glow-cyan">ENTER</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-8 pt-32 pb-40 text-center relative">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#00f5ff] rounded-full opacity-5 blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-1/4 w-[300px] h-[300px] bg-[#ff00e5] rounded-full opacity-5 blur-[100px] pointer-events-none"></div>
+    <p class="text-xs uppercase tracking-[0.3em] text-[#00f5ff] mb-8 glow-cyan">// THE FUTURE OF DEVELOPMENT</p>
+    <h1 class="text-6xl md:text-8xl font-black leading-none mb-8">
+      <span class="text-[#00f5ff] glow-cyan">CODE.</span><br/>
+      <span class="text-[#ff00e5] glow-pink">DEPLOY.</span><br/>
+      <span class="text-white">DOMINATE.</span>
+    </h1>
+    <p class="text-lg text-neutral-400 max-w-xl mx-auto mb-12">Next-gen infrastructure for developers who refuse to be ordinary. Build at the speed of thought.</p>
+    <div class="flex justify-center gap-4">
+      <a href="#" class="bg-[#00f5ff] text-black font-bold px-10 py-4 rounded hover:shadow-[0_0_30px_#00f5ff66] transition">INITIALIZE</a>
+      <a href="#" class="border border-[#ff00e5] text-[#ff00e5] font-bold px-10 py-4 rounded hover:bg-[#ff00e5] hover:text-black transition">OBSERVE</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-7xl mx-auto px-8 py-24">
+    <p class="text-xs uppercase tracking-[0.3em] text-[#00f5ff] text-center mb-4">// SYSTEM CAPABILITIES</p>
+    <h2 class="text-4xl font-black text-center mb-16">Core <span class="text-[#00f5ff] glow-cyan">Modules</span></h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border border-[#00f5ff]/20 rounded-lg p-8 bg-black/50 hover:border-[#00f5ff]/60 transition border-glow-cyan">
+        <div class="text-[#00f5ff] text-3xl mb-4 font-mono">&gt;_</div>
+        <h3 class="text-lg font-bold mb-2 text-[#00f5ff]">QUANTUM DEPLOY</h3>
+        <p class="text-neutral-400 text-sm">Multi-region deployments in under 200ms. Edge-native by default.</p>
+      </div>
+      <div class="border border-[#ff00e5]/20 rounded-lg p-8 bg-black/50 hover:border-[#ff00e5]/60 transition border-glow-pink">
+        <div class="text-[#ff00e5] text-3xl mb-4 font-mono">&#9671;</div>
+        <h3 class="text-lg font-bold mb-2 text-[#ff00e5]">NEURAL ANALYTICS</h3>
+        <p class="text-neutral-400 text-sm">AI-powered insights that predict user behavior before it happens.</p>
+      </div>
+      <div class="border border-[#39ff14]/20 rounded-lg p-8 bg-black/50 hover:border-[#39ff14]/60 transition" style="box-shadow: 0 0 15px #39ff1433, inset 0 0 15px #39ff1411;">
+        <div class="text-[#39ff14] text-3xl mb-4 font-mono">&#9670;</div>
+        <h3 class="text-lg font-bold mb-2 text-[#39ff14]">SHIELD PROTOCOL</h3>
+        <p class="text-neutral-400 text-sm">Military-grade encryption. Zero-trust architecture. Sleep soundly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="max-w-5xl mx-auto px-8 py-24">
+    <p class="text-xs uppercase tracking-[0.3em] text-[#00f5ff] text-center mb-4">// TRANSMISSIONS</p>
+    <h2 class="text-4xl font-black text-center mb-16">Signal <span class="text-[#ff00e5]">Intercepts</span></h2>
+    <div class="space-y-6">
+      <div class="border border-neutral-800 rounded-lg p-8 bg-neutral-950">
+        <p class="text-neutral-300 font-mono text-sm mb-4">"AppFlow feels like it was sent back from the future. Our team's velocity increased 5x overnight."</p>
+        <p class="text-xs text-[#00f5ff] font-mono">— ELENA_K // CTO @ HYPERLOOP.DEV</p>
+      </div>
+      <div class="border border-neutral-800 rounded-lg p-8 bg-neutral-950">
+        <p class="text-neutral-300 font-mono text-sm mb-4">"I replaced four tools with AppFlow. One platform to rule them all."</p>
+        <p class="text-xs text-[#ff00e5] font-mono">— DEV_MARCUS // FOUNDER @ SYNTHWAVE.IO</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="max-w-5xl mx-auto px-8 py-24">
+    <p class="text-xs uppercase tracking-[0.3em] text-[#00f5ff] text-center mb-4">// ACCESS TIERS</p>
+    <h2 class="text-4xl font-black text-center mb-16">Choose Your <span class="text-[#00f5ff] glow-cyan">Protocol</span></h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border border-neutral-800 rounded-lg p-8 bg-neutral-950">
+        <h3 class="text-sm font-bold text-neutral-500 uppercase tracking-wider mb-2">BASIC</h3>
+        <p class="text-4xl font-black text-white mb-1">$0</p>
+        <p class="text-xs text-neutral-600 mb-6 font-mono">FREE_ACCESS</p>
+        <ul class="text-sm text-neutral-400 space-y-3 mb-8 font-mono">
+          <li>+ 2 projects</li>
+          <li>+ Community comms</li>
+          <li>+ Core modules</li>
+        </ul>
+        <a href="#" class="block text-center border border-neutral-700 py-3 text-sm font-bold tracking-wider hover:border-[#00f5ff] hover:text-[#00f5ff] transition rounded">ACTIVATE</a>
+      </div>
+      <div class="border border-[#00f5ff]/50 rounded-lg p-8 bg-neutral-950 border-glow-cyan">
+        <h3 class="text-sm font-bold text-[#00f5ff] uppercase tracking-wider mb-2">ADVANCED</h3>
+        <p class="text-4xl font-black text-[#00f5ff] mb-1 glow-cyan">$39</p>
+        <p class="text-xs text-neutral-600 mb-6 font-mono">PER_CYCLE</p>
+        <ul class="text-sm text-neutral-400 space-y-3 mb-8 font-mono">
+          <li>+ Unlimited projects</li>
+          <li>+ Priority uplink</li>
+          <li>+ Neural analytics</li>
+          <li>+ Custom domains</li>
+        </ul>
+        <a href="#" class="block text-center bg-[#00f5ff] text-black py-3 text-sm font-bold tracking-wider hover:shadow-[0_0_20px_#00f5ff66] transition rounded">INITIALIZE</a>
+      </div>
+      <div class="border border-neutral-800 rounded-lg p-8 bg-neutral-950">
+        <h3 class="text-sm font-bold text-neutral-500 uppercase tracking-wider mb-2">QUANTUM</h3>
+        <p class="text-4xl font-black text-white mb-1">CUSTOM</p>
+        <p class="text-xs text-neutral-600 mb-6 font-mono">NEGOTIABLE</p>
+        <ul class="text-sm text-neutral-400 space-y-3 mb-8 font-mono">
+          <li>+ Dedicated cluster</li>
+          <li>+ Shield protocol</li>
+          <li>+ 24/7 direct line</li>
+          <li>+ White-glove setup</li>
+        </ul>
+        <a href="#" class="block text-center border border-neutral-700 py-3 text-sm font-bold tracking-wider hover:border-[#ff00e5] hover:text-[#ff00e5] transition rounded">HAIL_US</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="max-w-4xl mx-auto text-center px-8 py-24">
+    <h2 class="text-5xl font-black mb-6">
+      <span class="text-[#00f5ff] glow-cyan">The future</span> doesn't wait.
+    </h2>
+    <p class="text-neutral-400 text-lg mb-10">Join the next wave of developers building at light speed.</p>
+    <a href="#" class="inline-block bg-[#00f5ff] text-black font-bold px-12 py-4 rounded text-lg hover:shadow-[0_0_40px_#00f5ff66] transition">JACK IN</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-7xl mx-auto px-8 py-10 border-t border-neutral-800 flex justify-between text-xs text-neutral-600 font-mono">
+    <span>&copy; 2026 APPFLOW_SYSTEMS</span>
+    <div class="flex gap-6">
+      <a href="#" class="hover:text-[#00f5ff] transition">PRIVACY</a>
+      <a href="#" class="hover:text-[#00f5ff] transition">TERMS</a>
+    </div>
+  </footer>
+
+</body>
+</html>

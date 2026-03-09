@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AppFlow — Option 5: Playful Creative</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    .blob { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-200 font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-8 py-6">
+    <span class="text-xl font-extrabold">
+      <span class="text-yellow-400">App</span><span class="text-pink-400">Flow</span>
+    </span>
+    <div class="hidden md:flex gap-6 text-sm font-medium text-neutral-400">
+      <a href="#features" class="hover:text-yellow-400 transition">Features</a>
+      <a href="#testimonials" class="hover:text-pink-400 transition">Love Letters</a>
+      <a href="#pricing" class="hover:text-emerald-400 transition">Pricing</a>
+    </div>
+    <a href="#cta" class="text-sm font-bold bg-yellow-400 text-black px-6 py-2.5 rounded-full hover:bg-yellow-300 transition">Try it!</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-8 pt-24 pb-32 relative">
+    <div class="absolute top-10 right-10 w-64 h-64 bg-yellow-400/10 blob blur-2xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-48 h-48 bg-pink-500/10 blob blur-2xl pointer-events-none"></div>
+    <div class="text-center relative">
+      <div class="inline-flex items-center gap-2 bg-neutral-900 border border-neutral-800 rounded-full px-4 py-2 text-sm mb-8">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-neutral-400">Now with AI superpowers</span>
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+        Building apps<br/>should be <span class="text-yellow-400">fun</span> <span class="text-4xl md:text-6xl">&#127881;</span>
+      </h1>
+      <p class="text-xl text-neutral-400 max-w-2xl mx-auto mb-10">Stop wrestling with infrastructure. Start creating amazing things. AppFlow makes development feel like play.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#" class="bg-yellow-400 text-black font-bold px-8 py-4 rounded-full text-lg hover:bg-yellow-300 hover:scale-105 transition-all">Start Building</a>
+        <a href="#" class="bg-pink-500 text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-pink-400 hover:scale-105 transition-all">See the Magic</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-6xl mx-auto px-8 py-24">
+    <h2 class="text-4xl font-extrabold text-center mb-4">Why you'll <span class="text-pink-400">love</span> it</h2>
+    <p class="text-center text-neutral-400 mb-16">Three reasons (out of a hundred).</p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-neutral-900 rounded-3xl p-8 border border-neutral-800 hover:border-yellow-400/50 hover:-translate-y-1 transition-all">
+        <div class="text-4xl mb-4">&#9889;</div>
+        <h3 class="text-xl font-bold text-yellow-400 mb-2">Stupid Fast</h3>
+        <p class="text-neutral-400">Deploy in under a second. No, really. We timed it. Multiple times.</p>
+      </div>
+      <div class="bg-neutral-900 rounded-3xl p-8 border border-neutral-800 hover:border-pink-400/50 hover:-translate-y-1 transition-all">
+        <div class="text-4xl mb-4">&#127912;</div>
+        <h3 class="text-xl font-bold text-pink-400 mb-2">Pretty by Default</h3>
+        <p class="text-neutral-400">Beautiful dashboards, gorgeous previews, and a UI you actually enjoy using.</p>
+      </div>
+      <div class="bg-neutral-900 rounded-3xl p-8 border border-neutral-800 hover:border-emerald-400/50 hover:-translate-y-1 transition-all">
+        <div class="text-4xl mb-4">&#129309;</div>
+        <h3 class="text-xl font-bold text-emerald-400 mb-2">Team Vibes</h3>
+        <p class="text-neutral-400">Real-time collab that feels natural. Like pair programming, minus the awkward silences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="max-w-5xl mx-auto px-8 py-24">
+    <h2 class="text-4xl font-extrabold text-center mb-16">Love <span class="text-pink-400">Letters</span> &#128140;</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-gradient-to-br from-yellow-400/5 to-pink-500/5 border border-neutral-800 rounded-3xl p-8">
+        <p class="text-lg text-neutral-300 mb-6">"I showed AppFlow to my team and they literally applauded. Not joking. Standing ovation."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center text-black font-bold">K</div>
+          <div>
+            <p class="font-semibold text-white">Kim Park</p>
+            <p class="text-sm text-neutral-500">Lead Dev, Funware</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-br from-pink-500/5 to-emerald-400/5 border border-neutral-800 rounded-3xl p-8">
+        <p class="text-lg text-neutral-300 mb-6">"Finally, a dev tool that doesn't make me want to flip my desk. It's delightful!"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-pink-400 flex items-center justify-center text-black font-bold">T</div>
+          <div>
+            <p class="font-semibold text-white">Tyler Nguyen</p>
+            <p class="text-sm text-neutral-500">Indie Maker</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="max-w-4xl mx-auto px-8 py-24">
+    <h2 class="text-4xl font-extrabold text-center mb-4">Pick your <span class="text-emerald-400">flavor</span> &#127846;</h2>
+    <p class="text-center text-neutral-400 mb-16">All plans come with a 14-day free trial. No credit card needed.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-8 text-center">
+        <div class="text-3xl mb-3">&#127847;</div>
+        <h3 class="font-bold text-lg text-white mb-2">Vanilla</h3>
+        <p class="text-3xl font-extrabold text-white mb-1">$0</p>
+        <p class="text-sm text-neutral-500 mb-6">forever free</p>
+        <ul class="text-sm text-neutral-400 space-y-2 mb-8 text-left">
+          <li>&#10003; 3 projects</li>
+          <li>&#10003; Community support</li>
+          <li>&#10003; Basic analytics</li>
+        </ul>
+        <a href="#" class="block border border-neutral-700 rounded-full py-3 font-bold hover:bg-neutral-800 transition">Get Started</a>
+      </div>
+      <div class="bg-neutral-900 border-2 border-yellow-400 rounded-3xl p-8 text-center relative">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-4 py-1 rounded-full">BEST VALUE</span>
+        <div class="text-3xl mb-3">&#127850;</div>
+        <h3 class="font-bold text-lg text-white mb-2">Sprinkles</h3>
+        <p class="text-3xl font-extrabold text-yellow-400 mb-1">$25</p>
+        <p class="text-sm text-neutral-500 mb-6">per month</p>
+        <ul class="text-sm text-neutral-400 space-y-2 mb-8 text-left">
+          <li>&#10003; Unlimited projects</li>
+          <li>&#10003; Priority support</li>
+          <li>&#10003; Advanced analytics</li>
+          <li>&#10003; Custom domains</li>
+        </ul>
+        <a href="#" class="block bg-yellow-400 text-black rounded-full py-3 font-bold hover:bg-yellow-300 transition">Grab It!</a>
+      </div>
+      <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-8 text-center">
+        <div class="text-3xl mb-3">&#127856;</div>
+        <h3 class="font-bold text-lg text-white mb-2">Sundae</h3>
+        <p class="text-3xl font-extrabold text-white mb-1">Custom</p>
+        <p class="text-sm text-neutral-500 mb-6">let's chat</p>
+        <ul class="text-sm text-neutral-400 space-y-2 mb-8 text-left">
+          <li>&#10003; Everything in Sprinkles</li>
+          <li>&#10003; Dedicated support</li>
+          <li>&#10003; SLA guarantee</li>
+          <li>&#10003; Custom integrations</li>
+        </ul>
+        <a href="#" class="block border border-neutral-700 rounded-full py-3 font-bold hover:bg-neutral-800 transition">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="max-w-4xl mx-auto text-center px-8 py-24">
+    <h2 class="text-5xl font-extrabold mb-6">Ready to have some <span class="text-yellow-400">fun</span>? &#128640;</h2>
+    <p class="text-xl text-neutral-400 mb-10">Join 10,000+ happy developers who actually enjoy their workflow.</p>
+    <a href="#" class="inline-block bg-yellow-400 text-black font-bold px-12 py-4 rounded-full text-lg hover:bg-yellow-300 hover:scale-105 transition-all">Let's Gooo!</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto px-8 py-10 border-t border-neutral-800 flex justify-between text-sm text-neutral-500">
+    <span>Made with &#10084;&#65039; by the AppFlow team</span>
+    <div class="flex gap-6">
+      <a href="#" class="hover:text-yellow-400 transition">Privacy</a>
+      <a href="#" class="hover:text-pink-400 transition">Terms</a>
+    </div>
+  </footer>
+
+</body>
+</html>
